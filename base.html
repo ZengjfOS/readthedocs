@@ -68,7 +68,11 @@
         <a href="{{ nav.homepage.url }}" class="icon icon-home"> {{ config.site_name }}
 	</a>
 	{%- endblock %}
+
+    {% if config.site_logo %}
 	<img src="{{ config.site_logo }}"/>
+    {% endif %}
+
 	{%- block search_button %}
         {% include "searchbox.html" %}
 	{%- endblock %}
