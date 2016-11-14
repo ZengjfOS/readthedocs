@@ -6,9 +6,9 @@
 
 ## 主题添加Logo
 
-  * 修改`css/theme.css`文件图片相关的CSS：  
+  * `css/theme.css`文件图片相关的CSS：  
     `.wy-side-nav-search img{display:block;height:45px;width:45px;margin:auto auto 0.809em auto;background-color:#2980B9;padding:5px;border-radius:100%}`  
-    为  
+    修改：  
     `.wy-side-nav-search img{display:block;height:100px;width:295px;margin:auto auto 0.809em auto;background-color:#2980B9;padding:5px;border-radius:0%`
   * 修改`base.html`，添加img标签添加图片：
 ```html
@@ -36,7 +36,7 @@
 
 ## 右侧内容区自适应浏览器宽度
 
-  * 修改`css/theme.css`文件CSS：  
+  * `css/theme.css`文件CSS：  
   `.wy-nav-content{padding:1.618em 3.236em;height:100%;max-width: 800px;margin:auto}`  
-  为  
+  修改：  
   `.wy-nav-content{padding:1.618em 3.236em;height:100%;argin:auto}`
