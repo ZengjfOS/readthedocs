@@ -13,14 +13,17 @@
   * 修改`base.html`，添加img标签添加图片：
 ```html
     <div class="wy-side-nav-search">
-    {%- block site_name %}
-    <a href="{{ nav.homepage.url }}" class="icon icon-home"> {{ config.site_name }}
-    </a>
-    {%- endblock %}
-    <img src="{{ config.site_logo }}"/>
-    {%- block search_button %}
-    {% include "searchbox.html" %}
-    {%- endblock %}
+        {%- block site_name %}
+            <a href="{{ nav.homepage.url }}" class="icon icon-home"> {{ config.site_name }} </a>
+        {%- endblock %}
+
+        {% if config.site_logo %}
+            <img src="{{ config.site_logo }}"/>
+        {% endif %}
+
+        {%- block search_button %}
+            {% include "searchbox.html" %}
+        {%- endblock %}
     </div>
 ```
   * 在mkdocs.yml中添加logo设置
